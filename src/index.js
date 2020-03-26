@@ -1,6 +1,7 @@
+import 'antd/dist/antd.css'
 import React from 'react';
 import TableImage from "./TableImage";
-import 'antd/dist/antd.css'
+import UploadImage from "./UploadImage";
 import {Button} from "antd";
 
 const ReactDemo = () => (
@@ -14,5 +15,6 @@ const ReactDemo = () => (
 
 export {
     ReactDemo,
-    TableImage
+    TableImage,
+    UploadImage
 }

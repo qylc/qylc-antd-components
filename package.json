@@ -1,6 +1,6 @@
 {
   "name": "qylc-antd-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/index.js",
   "repository": "https://github.com/qylc/qylc-antd-components.git",
   "author": "qylc",
@@ -30,6 +30,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "antd": "^4.0.0"
+    "antd": "^4.0.0",
+    "@ant-design/icons": "^4.0.0"
   }
 }
