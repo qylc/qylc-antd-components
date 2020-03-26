@@ -13,11 +13,7 @@ function getBase64(file) {
   });
 }
 
-class PicturesWall extends Component {
-
-  constructor(props) {
-    super(props);
-  }
+class UploadImage extends Component {
 
   state = {
     previewVisible: false,
@@ -26,6 +22,8 @@ class PicturesWall extends Component {
   };
 
   componentDidMount() {
+    window.alert('123133x')
+    console.log('UploadImage init')
     // 初始值
     if (this.props.value && this.props.value.length > 0) {
       let list = [];
@@ -62,10 +60,11 @@ class PicturesWall extends Component {
   };
 
   handleChange = ({fileList}) => {
+    console.log('Upload Image onChange', fileList)
     this.setState({fileList});
+    console.log(this.props)
     if(this.props.onChange) {
       let file = [];
-      // console.log(JSON.stringify(fileList));
       fileList.forEach(f => {
         if(f.status === 'done' && f.url){
           file.push(f.url)
@@ -74,7 +73,9 @@ class PicturesWall extends Component {
           file.push(f.response.url)
         }
       })
-      this.props.onChange(file.join(","))
+      let fileValue = file.join(",");
+      console.log("Upload Image trigger onChange", fileValue)
+      this.props.onChange(fileValue)
     }
   }
 
@@ -106,4 +107,4 @@ class PicturesWall extends Component {
   }
 }
 
-export default PicturesWall
+export default UploadImage
