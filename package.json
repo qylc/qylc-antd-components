@@ -1,8 +1,8 @@
 {
-  "name": "qylc-ant-components",
-  "version": "1.0.0",
+  "name": "qylc-antd-components",
+  "version": "1.0.1",
   "main": "index.js",
-  "repository": "https://github.com/qylc/qylc-ant-components.git",
+  "repository": "https://github.com/qylc/qylc-antd-components.git",
   "author": "qylc",
   "license": "MIT",
   "private": false,
