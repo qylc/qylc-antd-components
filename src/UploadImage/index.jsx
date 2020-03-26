@@ -23,7 +23,6 @@ class UploadImage extends Component {
     };
 
     componentDidMount() {
-        window.alert('123133x')
         console.log('UploadImage init')
         // 初始值
         if (this.props.value && this.props.value.length > 0) {
@@ -90,7 +89,7 @@ class UploadImage extends Component {
         return (
             <div className="clearfix">
                 <Upload
-                    action={config.remoteUploadUrl}
+                    action={config.getRemoteUploadUrl()}
                     listType="picture-card"
                     fileList={fileList}
                     onPreview={this.handlePreview}

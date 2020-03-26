@@ -2,13 +2,11 @@ import 'antd/dist/antd.css'
 import React from 'react';
 import TableImage from "./TableImage";
 import UploadImage from "./UploadImage";
-import {Button} from "antd";
-
+import RemoteSelect from './RemoteSelect'
+import RemoteTreeSelect from  './RemoteTreeSelect'
 const ReactDemo = () => (
     <div>
-        <h1>这是我的第一个 react npm 组件</h1>
-
-        <Button type="primary">123123</Button>
+        <h1>QYLC ANTD 组件库</h1>
     </div>
 
 );
@@ -16,5 +14,7 @@ const ReactDemo = () => (
 export {
     ReactDemo,
     TableImage,
-    UploadImage
+    UploadImage,
+    RemoteSelect,
+    RemoteTreeSelect
 }
