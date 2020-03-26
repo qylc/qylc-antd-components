@@ -1,9 +1,15 @@
 import React from 'react';
 import TableImage from "./TableImage";
-import  "./index.less"
+import 'antd/dist/antd.css'
+import {Button} from "antd";
 
 const ReactDemo = () => (
-    <h1>这是我的第一个 react npm 组件</h1>
+    <div>
+        <h1>这是我的第一个 react npm 组件</h1>
+
+        <Button>123123</Button>
+    </div>
+
 );
 
 export {

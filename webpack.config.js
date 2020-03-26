@@ -16,7 +16,7 @@ module.exports = {
             test: /\.(js|jsx)$/,
             use: "babel-loader",
             exclude: /node_modules/
-        },{
+        }, {
             test: /\.less$/,
             use: [
                 {
@@ -32,7 +32,19 @@ module.exports = {
                     },
                 },
             ],
-        },]
+        },
+            {
+                test: /\.css$/,
+                use: [
+                    {
+                        loader: 'style-loader', // creates style nodes from JS strings
+                    },
+                    {
+                        loader: 'css-loader', // translates CSS into CommonJS
+                    },
+                ],
+            },
+        ]
     },
     plugins: [htmlWebpackPlugin],
     resolve: {
